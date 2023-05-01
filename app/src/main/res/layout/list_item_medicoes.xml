@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margem_padrao"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_padrao"
+        android:layout_marginVertical="@dimen/margem_pequena">
+        <TextView
+            android:id="@+id/tvPeso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tvData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/us_zipcodes"
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvPeso"
+            app:layout_constraintStart_toStartOf="@+id/tvPeso"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeso"
+            tools:text="@tools:sample/date/ddmmyy"
+            android:textSize="24dp"
+            android:textColor="@color/black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

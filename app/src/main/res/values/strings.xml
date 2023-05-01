@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Registro de Peso</string>
+    <string name="lista_vazia">Sem Registros de Peso</string>
+    <string name="informe_a_data">Informe a Data</string>
+    <string name="informe_peso">Informe o Peso</string>
+    <string name="erro_peso">Por favor informe o peso.</string>
+    <string name="erro_data">Informe a Data</string>
+    <string name="label_item_peso">Peso: %1$.2f</string>
+    <string name="label_item_data">Data Medição: %1$s</string>
+</resources>
